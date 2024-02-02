@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 
+/* 
+  * Quizas no sea la mejor organizacion para esta pagina, pero estoy experimentando como ordenar css.
+  * Y funciona jeje :E 
+*/
+
 :root {
   --clr-tone-0: #000;
   --clr-tone-1: #1E1A13;
   --clr-tone-f: #FFF;
+
+  --clr-green-1: #253f1f;
+  --clr-green-2: #487c3c;
 }
 
 * {
@@ -20,7 +28,11 @@ body {
   background-color: var(--clr-tone-0);
 }
 
-/* ============ SECTION ============ */
+img {
+  object-fit: cover;
+}
+
+/* ============ SECTIONS ============ */
 #section-hero {
   height: 727px;
   background-image: url('../img/bg-header.jpg');
@@ -31,19 +43,27 @@ body {
 #desc-section {
   & div:first-child {
     width: 475px;
-
   }
 }
 
 #charac-section {
   min-height: 350px;
+}
 
-  & i {
-    display: block;
-  }
+#images-section {
+  min-height: 348px;
 }
 
 /* ============ UTILS ============ */
+.link {
+  color: var(--clr-green-1);
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    color: var(--clr-green-2)
+  }
+}
+
 .bg-primary {
   background: var(--clr-tone-0);
 }
@@ -53,6 +73,7 @@ body {
 }
 
 /* ------ Margins ------ */
+
 .my-7 {
   margin-block: 7px;
 }
@@ -80,14 +101,6 @@ body {
 }
 
 /* ------ Display ------ */
-.d-grid {
-  display: grid;
-}
-
-.cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .d-flex {
   display: flex;
 }
@@ -98,6 +111,10 @@ body {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.d-block {
+  display: block;
 }
 
 /* ------ */
