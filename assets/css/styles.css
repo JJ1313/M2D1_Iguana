@@ -31,6 +31,7 @@ body {
 #desc-section {
   & div:first-child {
     width: 475px;
+
   }
 }
 
