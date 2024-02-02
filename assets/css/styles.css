@@ -41,13 +41,23 @@ img {
 }
 
 #desc-section {
-  & div:first-child {
+  & .text-container {
     width: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
   }
 }
 
 #charac-section {
   min-height: 350px;
+
+  & .icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 #images-section {
