@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+:root {
+  --clr-tone-0: #000;
+  --clr-tone-1: #1E1A13;
+  --clr-tone-f: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  color: var(--clr-tone-f);
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-tone-0);
+}
+
+/* ============ SECTION ============ */
+#section-hero {
+  height: 727px;
+  background-image: url('../img/bg-header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#desc-section {
+  & div:first-child {
+    width: 475px;
+  }
+}
+
+#charac-section {
+  min-height: 350px;
+
+  & i {
+    display: block;
+  }
+}
+
+/* ============ UTILS ============ */
+.bg-primary {
+  background: var(--clr-tone-0);
+}
+
+.bg-secondary {
+  background-color: var(--clr-tone-1);
+}
+
+/* ------ Margins ------ */
+.my-7 {
+  margin-block: 7px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+/* ------ Paddings ------ */
+
+.py-45 {
+  padding-block: 45px;
+}
+
+.py-auto {
+  padding-block: auto;
+}
+
+.px-150 {
+  padding-inline: 150px;
+}
+
+/* ------ Display ------ */
+.d-grid {
+  display: grid;
+}
+
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* ------ */
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.place-center {
+  place-content: center;
+}
+
+/* ------ Gap */
+.gx-90 {
+  column-gap: 90px;
+  /* gap: 90px; */
+}
+
+.gy-20 {
+  row-gap: 20px;
+  /* gap: 90px; */
+}
+
+.g-16 {
+  gap: 16px;
+}
+
+.gx-182 {
+  gap: 182px;
+}
+
+/* ------ Text ------ */
+.txt-center {
+  text-align: center;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
+/* ------ Fonts ------ */
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
